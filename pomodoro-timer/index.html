@@ -3,9 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>pomodoro-timer</title>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="timer-header">
+      <i class="large material-icons" style="font-size: 48px;">access_alarm</i>
+      <h1>タイマー</h1>
+    </div>
+
+
+    <!-- 円形タイマー表示 -->
+    <div class="timer-circle">
+        <span id="time-display">05:00</span>
+        <p>設定時間</p>
+    </div>
+
+    <!-- 時間調整スライダー -->
+    <div class="time-controls">
+        <button id="decrease-time">－</button>
+        <input type="range" id="time-slider" min="1" max="60" value="5">
+        <button id="increase-time">＋</button>
+    </div>
+
+    <!-- タイマー操作ボタン -->
+    <div class="controls">
+        <button id="reset-btn">🔄</button>
+        <button id="start-btn">▶ 開始</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
